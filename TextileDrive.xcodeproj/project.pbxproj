@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		133B313122A87DB800339173 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4829860121C6BFCA0058F246 /* AppDelegate.swift */; };
+		133B313322A87DB800339173 /* Pods_TextileDrive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9BA15DDFCBF0D09DAC93BA9 /* Pods_TextileDrive.framework */; };
+		133B313522A87DB800339173 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 535C4594222137A600B67DB0 /* Main.storyboard */; };
+		133B313622A87DB800339173 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 535C458E2221378200B67DB0 /* LaunchScreen.storyboard */; };
+		133B313722A87DB800339173 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 535C458D2221378200B67DB0 /* Assets.xcassets */; };
+		133B313922A87DB800339173 /* TextileProvider.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 48CAD73C21C6C14900F10C87 /* TextileProvider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		133B314122A8940400339173 /* TextileThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133B314022A8940400339173 /* TextileThread.swift */; };
+		13E0F3FE22A724EE00280E6D /* FileProviderEnumerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CAD74221C6C14900F10C87 /* FileProviderEnumerator.swift */; };
+		48CAD73F21C6C14900F10C87 /* FileProviderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CAD73E21C6C14900F10C87 /* FileProviderExtension.swift */; };
+		53023EAC2210D0E600B2630E /* FileProviderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53023EAB2210D0E600B2630E /* FileProviderItem.swift */; };
+		53EC6D8A22142F3E004280D3 /* MediaItemReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EC6D8922142F3E004280D3 /* MediaItemReference.swift */; };
+		53EC6D8C22145E47004280D3 /* MediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EC6D8B22145E47004280D3 /* MediaItem.swift */; };
+		53EC6D92221D86F3004280D3 /* FileProviderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EC6D91221D86F3004280D3 /* FileProviderError.swift */; };
+		8B8797FBF5F1138266F4393B /* Pods_TextileProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E08E30781AA864555BA2E091 /* Pods_TextileProvider.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		133B312C22A87DB800339173 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 482985F621C6BFCA0058F246 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48CAD73B21C6C14900F10C87;
+			remoteInfo = TextileProvider;
+		};
+		133B312E22A87DB800339173 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 482985F621C6BFCA0058F246 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48CAD73B21C6C14900F10C87;
+			remoteInfo = TextileProvider;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		133B313822A87DB800339173 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				133B313922A87DB800339173 /* TextileProvider.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		133B313E22A87DB800339173 /* TextileDrive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextileDrive.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		133B314022A8940400339173 /* TextileThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextileThread.swift; sourceTree = "<group>"; };
+		13F6248722A8737D006DC85E /* Textile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Textile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1428E5CD6FC5309469106766 /* Pods-TextileDrive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextileDrive.release.xcconfig"; path = "Target Support Files/Pods-TextileDrive/Pods-TextileDrive.release.xcconfig"; sourceTree = "<group>"; };
+		21C3C91771A9B9F35F03501A /* Pods-TextileProvider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextileProvider.debug.xcconfig"; path = "Target Support Files/Pods-TextileProvider/Pods-TextileProvider.debug.xcconfig"; sourceTree = "<group>"; };
+		4829860121C6BFCA0058F246 /* AppDelegate.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; tabWidth = 2; };
+		48CAD73C21C6C14900F10C87 /* TextileProvider.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TextileProvider.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		48CAD73E21C6C14900F10C87 /* FileProviderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProviderExtension.swift; sourceTree = "<group>"; };
+		48CAD74221C6C14900F10C87 /* FileProviderEnumerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProviderEnumerator.swift; sourceTree = "<group>"; };
+		48CAD74421C6C14900F10C87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48CAD74521C6C14900F10C87 /* TextileProvider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TextileProvider.entitlements; sourceTree = "<group>"; };
+		4F8A25C9C142A4551869F6AA /* Pods-Provider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Provider.release.xcconfig"; path = "Target Support Files/Pods-Provider/Pods-Provider.release.xcconfig"; sourceTree = "<group>"; };
+		53023EAB2210D0E600B2630E /* FileProviderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProviderItem.swift; sourceTree = "<group>"; };
+		535C458D2221378200B67DB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		535C458F2221378200B67DB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		535C45902221378200B67DB0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		535C4595222137A600B67DB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		53EC6D8922142F3E004280D3 /* MediaItemReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItemReference.swift; sourceTree = "<group>"; };
+		53EC6D8B22145E47004280D3 /* MediaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItem.swift; sourceTree = "<group>"; };
+		53EC6D91221D86F3004280D3 /* FileProviderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProviderError.swift; sourceTree = "<group>"; };
+		586563597D1130B741CFF8F7 /* Pods-TextileDrive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextileDrive.debug.xcconfig"; path = "Target Support Files/Pods-TextileDrive/Pods-TextileDrive.debug.xcconfig"; sourceTree = "<group>"; };
+		C9BA15DDFCBF0D09DAC93BA9 /* Pods_TextileDrive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextileDrive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D74C52AC4D9E4E8895169D2A /* Pods-TextileProvider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextileProvider.release.xcconfig"; path = "Target Support Files/Pods-TextileProvider/Pods-TextileProvider.release.xcconfig"; sourceTree = "<group>"; };
+		E08E30781AA864555BA2E091 /* Pods_TextileProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextileProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED24D816A5C14EF6089DB99D /* Pods-Provider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Provider.debug.xcconfig"; path = "Target Support Files/Pods-Provider/Pods-Provider.debug.xcconfig"; sourceTree = "<group>"; };
+		F4A2133421E6C66500275D02 /* TextileDrive.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = TextileDrive.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		133B313222A87DB800339173 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				133B313322A87DB800339173 /* Pods_TextileDrive.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48CAD73921C6C14900F10C87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B8797FBF5F1138266F4393B /* Pods_TextileProvider.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13353E1222A735E1001FCC6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13F6248722A8737D006DC85E /* Textile.framework */,
+				C9BA15DDFCBF0D09DAC93BA9 /* Pods_TextileDrive.framework */,
+				E08E30781AA864555BA2E091 /* Pods_TextileProvider.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		482985F521C6BFCA0058F246 = {
+			isa = PBXGroup;
+			children = (
+				F4A2133321E6C63500275D02 /* Configuration */,
+				4829860021C6BFCA0058F246 /* TextileDrive */,
+				48CAD73D21C6C14900F10C87 /* TextileProvider */,
+				482985FF21C6BFCA0058F246 /* Products */,
+				13353E1222A735E1001FCC6D /* Frameworks */,
+				A5FAD661759C211279947825 /* Pods */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+		};
+		482985FF21C6BFCA0058F246 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48CAD73C21C6C14900F10C87 /* TextileProvider.appex */,
+				133B313E22A87DB800339173 /* TextileDrive.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4829860021C6BFCA0058F246 /* TextileDrive */ = {
+			isa = PBXGroup;
+			children = (
+				4829860121C6BFCA0058F246 /* AppDelegate.swift */,
+				535C458C2221378200B67DB0 /* Resources */,
+			);
+			path = TextileDrive;
+			sourceTree = "<group>";
+		};
+		48CAD73D21C6C14900F10C87 /* TextileProvider */ = {
+			isa = PBXGroup;
+			children = (
+				48CAD73E21C6C14900F10C87 /* FileProviderExtension.swift */,
+				48CAD74221C6C14900F10C87 /* FileProviderEnumerator.swift */,
+				535C458922212FF800B67DB0 /* Models */,
+				F4CD48352245BED800CA1259 /* Resources */,
+			);
+			path = TextileProvider;
+			sourceTree = "<group>";
+		};
+		535C458922212FF800B67DB0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				53EC6D91221D86F3004280D3 /* FileProviderError.swift */,
+				53023EAB2210D0E600B2630E /* FileProviderItem.swift */,
+				53EC6D8B22145E47004280D3 /* MediaItem.swift */,
+				53EC6D8922142F3E004280D3 /* MediaItemReference.swift */,
+				133B314022A8940400339173 /* TextileThread.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		535C458C2221378200B67DB0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				535C458E2221378200B67DB0 /* LaunchScreen.storyboard */,
+				535C4594222137A600B67DB0 /* Main.storyboard */,
+				535C458D2221378200B67DB0 /* Assets.xcassets */,
+				535C45902221378200B67DB0 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A5FAD661759C211279947825 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED24D816A5C14EF6089DB99D /* Pods-Provider.debug.xcconfig */,
+				4F8A25C9C142A4551869F6AA /* Pods-Provider.release.xcconfig */,
+				586563597D1130B741CFF8F7 /* Pods-TextileDrive.debug.xcconfig */,
+				1428E5CD6FC5309469106766 /* Pods-TextileDrive.release.xcconfig */,
+				21C3C91771A9B9F35F03501A /* Pods-TextileProvider.debug.xcconfig */,
+				D74C52AC4D9E4E8895169D2A /* Pods-TextileProvider.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F4A2133321E6C63500275D02 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				F4A2133421E6C66500275D02 /* TextileDrive.xcconfig */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		F4CD48352245BED800CA1259 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				48CAD74421C6C14900F10C87 /* Info.plist */,
+				48CAD74521C6C14900F10C87 /* TextileProvider.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		133B312A22A87DB800339173 /* TextileDrive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 133B313B22A87DB800339173 /* Build configuration list for PBXNativeTarget "TextileDrive" */;
+			buildPhases = (
+				133B312F22A87DB800339173 /* [CP] Check Pods Manifest.lock */,
+				133B313022A87DB800339173 /* Sources */,
+				133B313222A87DB800339173 /* Frameworks */,
+				133B313422A87DB800339173 /* Resources */,
+				133B313822A87DB800339173 /* Embed App Extensions */,
+				133B313A22A87DB800339173 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				133B312B22A87DB800339173 /* PBXTargetDependency */,
+				133B312D22A87DB800339173 /* PBXTargetDependency */,
+			);
+			name = TextileDrive;
+			productName = TextileDrive;
+			productReference = 133B313E22A87DB800339173 /* TextileDrive.app */;
+			productType = "com.apple.product-type.application";
+		};
+		48CAD73B21C6C14900F10C87 /* TextileProvider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48CAD74921C6C14900F10C87 /* Build configuration list for PBXNativeTarget "TextileProvider" */;
+			buildPhases = (
+				7CA9CA28D67BA73FFFEB803A /* [CP] Check Pods Manifest.lock */,
+				48CAD73821C6C14900F10C87 /* Sources */,
+				48CAD73921C6C14900F10C87 /* Frameworks */,
+				48CAD73A21C6C14900F10C87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextileProvider;
+			productName = TextileProvider;
+			productReference = 48CAD73C21C6C14900F10C87 /* TextileProvider.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		482985F621C6BFCA0058F246 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Ray Wenderlich";
+				TargetAttributes = {
+					48CAD73B21C6C14900F10C87 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+					};
+				};
+			};
+			buildConfigurationList = 482985F921C6BFCA0058F246 /* Build configuration list for PBXProject "TextileDrive" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 482985F521C6BFCA0058F246;
+			productRefGroup = 482985FF21C6BFCA0058F246 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				133B312A22A87DB800339173 /* TextileDrive */,
+				48CAD73B21C6C14900F10C87 /* TextileProvider */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		133B313422A87DB800339173 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				133B313522A87DB800339173 /* Main.storyboard in Resources */,
+				133B313622A87DB800339173 /* LaunchScreen.storyboard in Resources */,
+				133B313722A87DB800339173 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48CAD73A21C6C14900F10C87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		133B312F22A87DB800339173 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TextileDrive-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		133B313A22A87DB800339173 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TextileDrive/Pods-TextileDrive-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TextileDrive/Pods-TextileDrive-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TextileDrive/Pods-TextileDrive-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CA9CA28D67BA73FFFEB803A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TextileProvider-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		133B313022A87DB800339173 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				133B313122A87DB800339173 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48CAD73821C6C14900F10C87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48CAD73F21C6C14900F10C87 /* FileProviderExtension.swift in Sources */,
+				53EC6D8C22145E47004280D3 /* MediaItem.swift in Sources */,
+				53EC6D92221D86F3004280D3 /* FileProviderError.swift in Sources */,
+				13E0F3FE22A724EE00280E6D /* FileProviderEnumerator.swift in Sources */,
+				53EC6D8A22142F3E004280D3 /* MediaItemReference.swift in Sources */,
+				53023EAC2210D0E600B2630E /* FileProviderItem.swift in Sources */,
+				133B314122A8940400339173 /* TextileThread.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		133B312B22A87DB800339173 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48CAD73B21C6C14900F10C87 /* TextileProvider */;
+			targetProxy = 133B312C22A87DB800339173 /* PBXContainerItemProxy */;
+		};
+		133B312D22A87DB800339173 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48CAD73B21C6C14900F10C87 /* TextileProvider */;
+			targetProxy = 133B312E22A87DB800339173 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		535C458E2221378200B67DB0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				535C458F2221378200B67DB0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		535C4594222137A600B67DB0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				535C4595222137A600B67DB0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		133B313C22A87DB800339173 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 586563597D1130B741CFF8F7 /* Pods-TextileDrive.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "TextileDrive Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.textile.drive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		133B313D22A87DB800339173 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1428E5CD6FC5309469106766 /* Pods-TextileDrive.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "TextileDrive Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.textile.drive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4829860E21C6BFCB0058F246 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4A2133421E6C66500275D02 /* TextileDrive.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4829860F21C6BFCB0058F246 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4A2133421E6C66500275D02 /* TextileDrive.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		48CAD74A21C6C14900F10C87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21C3C91771A9B9F35F03501A /* Pods-TextileProvider.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TextileProvider/Resources/TextileProvider.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/TextileProvider/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.textile.drive.provider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		48CAD74B21C6C14900F10C87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D74C52AC4D9E4E8895169D2A /* Pods-TextileProvider.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TextileProvider/Resources/TextileProvider.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/TextileProvider/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.textile.drive.provider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		133B313B22A87DB800339173 /* Build configuration list for PBXNativeTarget "TextileDrive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				133B313C22A87DB800339173 /* Debug */,
+				133B313D22A87DB800339173 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		482985F921C6BFCA0058F246 /* Build configuration list for PBXProject "TextileDrive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4829860E21C6BFCB0058F246 /* Debug */,
+				4829860F21C6BFCB0058F246 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48CAD74921C6C14900F10C87 /* Build configuration list for PBXNativeTarget "TextileProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48CAD74A21C6C14900F10C87 /* Debug */,
+				48CAD74B21C6C14900F10C87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 482985F621C6BFCA0058F246 /* Project object */;
+}
